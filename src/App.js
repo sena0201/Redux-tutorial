@@ -4,6 +4,7 @@ import CartContainer from "./components/CartContainer";
 import Modal from "./components/Modal";
 import Navbar from "./components/Navbar";
 import { getCartItems } from "./features/cart/cartSlice";
+import { calculateTotals } from "./features/cart/cartSlice";
 
 function App() {
   const { cartItems, isLoading } = useSelector((state) => state.cart);
